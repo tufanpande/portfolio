@@ -3,153 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tufan's portfolio</title>
-
+    <title>My Portfolio</title>
     <link
     rel="icon"
     href="images/logo.png">
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/b305b47f77.js" crossorigin="anonymous"></script>
+    <!-- box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- font awesome cdnjs link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- /css file link -->
+    <link rel="stylesheet" href="styles.css">
+
+   
+
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-              <img src="images/logo.png" alt="logo"class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i> 
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                    <p>Back-End Developer</p>
-                    <h1>Hi, I'm <span>Tufan</span><br> From Nepal👨‍💻 </h1>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i> 
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#Skill">Skill</a>
+            <a href="#Project">Project</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,It's Me</h3>
+            <h1>Tufan pandey</h1>
+            <h3>And I'm a <span>MERN-Stack Developer</span></h3>
+            <p>I am a BE.IT student . I am interested in Web development and also doing competitive programming.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/tufan-pandey-ba610a2b2/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/tufanpande"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/manfrommidwest/"><i class='bx bxl-instagram-alt' ></i></a>
+                
             </div>
-         </div>
-    </div>
-    <!-- -------------about------------------------------ -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png">
+            <!-- Add this code within your header section, before or after other navigation links -->
+            <a href="../portfolio/images/CV Template.pdf" target="_blank" download class="btn">Download Resume</a>
+
+            <!-- <a href="#" class="btn">Download CV</a> -->
+        </div>
+        <div class="home-img">
+            <img src="../portfolio/images/user.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- ABout section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="../portfolio/images/1.png" height="400" width="350" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>  Me </span></h2>
+            <h3>MERN-STACK Developer</h3>
+            <p>I am a beginner Mern-stack developer looking for opportunities to expand my skills. I have knowledge of HTML, CSS,JavaScript,Nodejs,Expressjs and reactjs and I am committed to improving my proficiency in these technologies.</p>
+                         <p>If you are looking for a motivated and dedicated Mern-stack developer, I am available for work opportunities and excited to contribute to projects that allow me to expand my experience and knowledge.</p>
+
+                <a href="#" class="btn">Read More</a>
+        </div>
+       
+    </section>
+
+    <!-- section  Skill-->
+  
+    <section class="Skill" id="Skill">
+        <h2 class="heading"> My <span>   Skills</span></h2>
+        <div class="skill-container">
+            <div class="skill-box">
+               <h3>Programing Langauage</h3>
+                <p>C Langauage</p>
+                <p>C++ Langauage</p>
+                <p>Basic Java </p>
+            </div>
+           
+            <div class="skill-box">
+                <h3>Course Work</h3>
+                <p>Object Oriented programming Langauage(OOPS)</p>
+                <p>Data Base Management System(DBMS)</p>
+                <p>Computer Networking(CN)</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>web Development</h3>
+                <p>Html</p>
+                <p>Css</p>
+                <P>JavaScript</P>
+                <p>MERNSTACK</p>
+                <p>Github</p>
+            </div>
+
+            <div class="skill-box">
+               <h3>Certification</h3>
+                <p>LOADING>>> ,<span>loading</span></p>
+                <p>LOADING ,<span>loading</span></p>
+                <p>LOADING ,<span>loading</span></p>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- project section -->
+    <section class="Project" id="Project">
+        <h2 class="heading">My <span>Project</span></h2>
+        <div class="Project-container">
+            <div class="Project-box">
+                <img src="../portfolio/images/work1.png" height="400" width="600" alt="">
+                <div class="Project-layer">
+                    <h4>Pharmacy Management system </h4>
+                    <p>Crafted an system using HTML, CSS,Js,PHP faithfully recreating the platform's look and feel.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I am passionate and skilled Back-End Developer with a strong
-                         background in building robust and scalable web applications. With a
-                          keen eye for detail and a commitment to delivering high-quality code,
-                        I  thrives in dynamic and collaborative environments</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Mern-Stack</span><br>MERN</li>
-                                <li><span>Web Development</span><br>Designing Web pages</li>
-                                </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2023-present</span><br>MERN Training at Broadway Infosys</li>
-                                <li><span>2021-2023</span><br>Designing Web pages at EEC</li>
-                              </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2023</span><br>MERN-Stack Training at Broadway</li>
-                                <li><span>2021-present</span><br>BE.IT from Everest Engineering College </li>
-                               </ul>
-                        </div>
+            </div>
+
+            <div class="Project-box">
+                <img src="../portfolio/images/blog.jpg" height="400" width="600" alt="">
+                <div class="Project-layer">
+                    <h4>Blog management System</h4>
+                    <p>A platform where you can find blogs to read</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="Project-box">
+                <img src="../portfolio/images/porfolio.png" height="400" width="600" alt="">
+                <div class="Project-layer">
+                    <h4>Portfolio</h4>
+                    <p>A personal portfolio site showcasing my skills,
+                        achievements, and projects.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="Project-box">
+                <img src="../portfolio/images/library.jpg" height="400" width="600" alt="">
+                <div class="Project-layer">
+                    <h4>Book Management System</h4>
+                    <p>A platform where you can find books to read</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- -------------------services-------------- -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                  <h2>Web Design</h2> 
-                  <p>Web design is a multidisciplinary field that involves 
-                    the planning, creation, and maintenance of visually
-                     appealing and user-friendly websites.
-                     It encompasses various elements, including layout,
-                      color schemes, typography, graphics, and user interface (UI) design.</p> 
-                      <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2> 
-                    <p>Web design is a multidisciplinary field that involves 
-                      the planning, creation, and maintenance of visually
-                       appealing and user-friendly websites.
-                       It encompasses various elements, including layout,
-                        color schemes, typography, graphics, and user interface (UI) design.</p> 
-                        <a href="#">Learn more</a>
-                  </div>
-            </div>
-        </div>
-    </div>
-<!-- --------------------portfolio------------------------------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work1.png">
-                    <div class="layer">
-                        <h3>Pharmacy Management system</h3>
-                        <p>The system connects you directly to the pharmacy </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-                <a href="#" class="btn">See more</a>
-        </div>
-    </div>
+    </section>
 
     <!-- -------------contact--------------- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>tufanpande@gmail.com</p>
-                    <p><i class="fa-solid fa-phone-square-alt"></i>9869523858</p>
-                    <div class="social-icons">
-                      <a href="https://www.facebook.com/raw.bin.9634/"><i class="fa-brands fa-facebook"></i></a>
-                      <a href="https://github.com/tufanpande"><i class="fa-brands fa-github"></i></a>
-                      <a href="https://www.instagram.com/manfrommidwest/"><i class="fa-brands fa-instagram"></i></a>
-                      <a href="https://www.linkedin.com/in/tufan-pandey-ba610a2b2/"><i class="fa-brands fa-linkedin"></i></a>
-                      <a href="https://twitter.com/tufanpande"><i class="fa-brands fa-twitter"></i></a>  
-                    </div>
-                    <a href="images/CV Template.pdf"download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name"required>
-                        <input type="email" name="Email" placeholder="Your Email"required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+    <section class="Contact" id="Contact">
+        <h2 class="heading">Contact<span>  Me!</span></h2>
+
+        <form action="#">
+        
+            <div class="input-box">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last NAme">
             </div>
+
+            <div class="input-box">
+                <input type="tel" placeholder="Mobile Number">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="Submit" value="send Message" class="btn">
+            
+       </form>
+    </section>
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p> Copyright &copy; 2023 tufanpande| All Rights Reserved.</p>
         </div>
-        <div class="copyright">
-            <p>Copyright &COPY; Tufan<i class="fa-solid fa-heart"></i></p>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
-    </div>
+    </footer>
+
+    <!-- scroll revel -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+
     <script>
         var tablinks= document.getElementsByClassName("tab-links");
         var tabcontents= document.getElementsByClassName("tab-contents");
